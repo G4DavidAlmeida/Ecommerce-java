@@ -1,8 +1,8 @@
 package app;
 
-import app.abstractTypes.Product;
+import app.abstracttypes.Produto;
 
-public class Computador extends Product {
+public class Computador extends Produto {
 	private String hd;
 	private String memoria;
 	private String processador;

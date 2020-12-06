@@ -11,6 +11,6 @@ public class ProductsTest {
 		Computador computador = new Computador("computador1", "fabricante computador", 3500, "HD 2TB", "RAM 8GB DDR4", "Intel Core I5 10th Geração");
 		
 		Calendar validade = Calendar.getInstance();
-		Cerveja cerveja = new Cerveja("cerveja1", "fabricante cerveja", 5, "2 unidades", validade);
+		Cerveja cerveja = new Cerveja("cerveja1", "fabricante cerveja", 5, 2.5, validade);
 	}
 }

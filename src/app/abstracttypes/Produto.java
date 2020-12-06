@@ -1,11 +1,11 @@
-package app.abstractTypes;
+package app.abstracttypes;
 
-public abstract class Product {
+public abstract class Produto {
 	private String nome;
 	private String fabricante;
 	private double preco;
 	
-	public Product (String nome, String fabricante, double preco) {
+	public Produto (String nome, String fabricante, double preco) {
 		this.setNome(nome);
 		this.setFabricante(fabricante);
 		this.setPreco(preco);

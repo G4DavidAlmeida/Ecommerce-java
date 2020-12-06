@@ -1,8 +1,8 @@
 package app;
 
-import app.abstractTypes.*;
+import app.abstracttypes.*;
 
-public class Televisao extends Product {
+public class Televisao extends Produto {
 	private double peso;
 	private String tamanho;
 	private String resolucao;

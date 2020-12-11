@@ -1,8 +1,9 @@
 package app;
 
 import app.abstracttypes.*;
+import app.interfaces.Imposto;
 
-public class Televisao extends Produto {
+public class Televisao extends Produto implements Imposto {
 	private double peso;
 	private String tamanho;
 	private String resolucao;
@@ -31,5 +32,9 @@ public class Televisao extends Produto {
 	}
 	public void setResolucao(String resolucao) {
 		this.resolucao = resolucao;
+	}
+	
+	public double valorImposto() {
+		return this.getPreco() * 0.06;
 	}
 }

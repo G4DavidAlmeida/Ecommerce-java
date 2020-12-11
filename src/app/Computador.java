@@ -1,8 +1,9 @@
 package app;
 
 import app.abstracttypes.Produto;
+import app.interfaces.Imposto;
 
-public class Computador extends Produto {
+public class Computador extends Produto implements Imposto {
 	private String hd;
 	private String memoria;
 	private String processador;
@@ -32,6 +33,7 @@ public class Computador extends Produto {
 	public void setProcessador(String processador) {
 		this.processador = processador;
 	}
-	
-	
+	public double valorImposto() {
+		return this.getPreco() * 0.05;
+	}
 }

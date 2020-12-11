@@ -3,8 +3,9 @@ package app;
 import java.util.Calendar;
 
 import app.abstracttypes.*;
+import app.interfaces.Imposto;
 
-public class Cerveja extends Produto {
+public class Cerveja extends Produto implements Imposto {
 	private double teorAlcoolico;
 	private Calendar validade;
 	
@@ -26,4 +27,9 @@ public class Cerveja extends Produto {
 	public void setValidade(Calendar validade) {
 		this.validade = validade;
 	}
+
+	public double valorImposto() {
+		return this.getPreco() * 0.08;
+	}
+
 }

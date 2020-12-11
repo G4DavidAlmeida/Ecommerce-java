@@ -21,6 +21,18 @@ public class Carrinho {
 		return total;
 	}
 	
+	public double totalValorImposto(){
+	       
+	       double totalImposto = 0;
+	       
+	       for(Pedido p: pedidos){
+	           double valorTotalPedido = p.imposto.valorImposto() * p.quantidade;
+	           totalImposto = totalImposto + valorTotalPedido;
+	       }
+	       
+	       return totalImposto;
+	   }
+	
 	public List<Pedido> listaPedidos () {
 		return this.pedidos;
 	}

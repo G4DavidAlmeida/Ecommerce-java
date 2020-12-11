@@ -12,5 +12,8 @@ public class ProductsTest {
 		
 		Calendar validade = Calendar.getInstance();
 		Cerveja cerveja = new Cerveja("cerveja1", "fabricante cerveja", 5, 2.5, validade);
+		System.out.println("Referencia tv: " + televisao);
+		System.out.println("Referencia computador: " + computador);
+		System.out.println("Referencia cerveja: " + cerveja);
 	}
 }
